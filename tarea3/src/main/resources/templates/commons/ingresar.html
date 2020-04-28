@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tarea 3/ Thymeleaf</title>
+</head>
+<body>
+	<h1>Ingreso nuevo alumno</h1>
+	<form method="post" th:action="@{/resultados}">
+		<label for="nombres">Nombres</label>
+		<input id="nombres" type="text"  name="nombres" />
+		<br>
+		<label for="apellidos">Apellidos</label>
+		<input id="apellidos" type="text"  name="apellidos" />
+		<br>
+		<label for="fechaNac">Fecha de Nacimiento:</label><br>
+		
+		<label for="dia">dia:</label>
+		<input id="dia" type="text"  name="dia" /><br>
+		
+		<label for="mes">  mes:</label>
+		<input id="mes" type="text"  name="mes" /><br>
+		
+		<label for="anno"> anno:</label>
+		<input id="anno" type="text"  name="anno" /><br>
+		<br>
+		<label for="lugarNac">Lugar de Nacimiento </label>
+		<input id="lugarNac" type="text"  name="lugarNac" />
+		<br>
+		<label for="colegio">Instituto o Colegio de procedencia</label>
+		<input id="colegio" type="text"  name="colegio" />
+		<br>
+		<label for="telFijo">Teléfono fijo</label>
+		<input id="telFijo" type="text"  name="telFijo" />
+		<br>
+		<label for="telCel">Teléfono móvil</label>
+		<input id="telCel" type="text"  name="telCel" />
+		<br>
+		<input type="submit" value="Guardar alumno">
+      </form>
+</body>
+</html>
